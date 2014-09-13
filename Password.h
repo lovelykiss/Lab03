@@ -2,6 +2,11 @@
 #define PASSWORD_H
 
 //complete the includes
+#include "ListArray.h"
+using CSC2110::ListArray;
+#include "Text.h"
+using CSC2110::String;
+
 
 class Password
 {
@@ -15,7 +20,7 @@ class Password
 
    public:
       //a private helper method to report the number of character matches between two Strings
-      int getNumMatches(String* curr_word, String* word_guess);
+    //  int getNumMatches(String* curr_word, String* word_guess);
 
    public:
       Password();
@@ -25,6 +30,7 @@ class Password
       int getNumberOfPasswordsLeft();
       String* getOriginalWord(int index);
 	int bestGuess();
+	void displayViableWords();
 
 };
 
