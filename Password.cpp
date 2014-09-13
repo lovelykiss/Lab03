@@ -97,6 +97,7 @@ void Password::displayViableWords()
 	{
 		String* word = itr->next();
 		word->displayString();
+		cout << endl;
 	}
 	delete itr;
 }
